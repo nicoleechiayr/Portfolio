@@ -546,9 +546,14 @@
     }
 
     .animate {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .animate.hidden {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
     .animate.visible {
@@ -565,7 +570,6 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#project">Project</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -606,7 +610,6 @@
   <!-- PROJECT -->
   <section id="project">
     <div class="section-label">Featured Project</div>
-    <h2 class="section-title">Case Study</h2>
 
     <div class="project-card">
       <div class="project-header">
@@ -685,49 +688,13 @@
     </div>
   </section>
 
-  <div class="divider"><hr/></div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-label">Capabilities</div>
-    <h2 class="section-title animate">Skills & Tools</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card animate">
-        <div class="skill-icon">🧠</div>
-        <div class="skill-name">Prompt Engineering</div>
-        <div class="skill-desc">Designing structured AI prompts for reliable, parseable outputs in production workflows.</div>
-      </div>
-      <div class="skill-card animate">
-        <div class="skill-icon">⚙️</div>
-        <div class="skill-name">Workflow Automation</div>
-        <div class="skill-desc">Building no-code and low-code automations using Zapier, Make, and similar platforms.</div>
-      </div>
-      <div class="skill-card animate">
-        <div class="skill-icon">🤖</div>
-        <div class="skill-name">AI Agent Design</div>
-        <div class="skill-desc">Architecting multi-step AI agents that chain tools, APIs, and data sources together.</div>
-      </div>
-      <div class="skill-card animate">
-        <div class="skill-icon">🗺️</div>
-        <div class="skill-name">Product Thinking</div>
-        <div class="skill-desc">Translating inefficiencies into user-focused solutions with clear problem framing.</div>
-      </div>
-      <div class="skill-card animate">
-        <div class="skill-icon">🔗</div>
-        <div class="skill-name">API Integration</div>
-        <div class="skill-desc">Connecting third-party services via APIs and webhooks to build cohesive systems.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
+    <!-- CONTACT -->
   <div class="contact-section" id="contact">
     <div class="section-label">Get in Touch</div>
     <h2>Let's work together.</h2>
     <p>Open to AI and Product Manager roles. Feel free to reach out.</p>
     <div class="contact-links">
-      <a href="https://linkedin.com/in/nicole-chia" target="_blank" class="contact-btn">💼 LinkedIn</a>
+      <a href="https://linkedin.com/in/nicolechia" target="_blank" class="contact-btn">💼 LinkedIn</a>
     </div>
   </div>
 
